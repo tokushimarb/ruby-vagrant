@@ -99,12 +99,12 @@ Windows の方は Tera Term などの SSH クライアントで、
 ## Vagrant Box の中身
 
 64 ビット:
-* CentOS 7.1.1503 (2015-07-12 時点での最新)
+* CentOS 7.1.1503 (Latest at 2015-07-10)
 * RVM 1.26.11
 * Ruby 2.2.2p95
 
 32 ビット:
-* CentOS 6.6 (2015-07-12 時点での最新)
+* CentOS 6.6 (Latest at 2015-07-10)
 * RVM 1.26.11
 * Ruby 2.2.2p95
 

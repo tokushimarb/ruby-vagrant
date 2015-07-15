@@ -1,7 +1,7 @@
 VAGRANTFILE_API_VERSION = "2"
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "ruby-vagrant"
-  config.vm.box_url = "https://github.com/shirasagi/ss-vagrant/releases/download/v0.7.0/ss-vagrant-virtualbox-x86_64.box"
+  config.vm.box_url = "https://github.com/tokushimarb/ruby-vagrant/releases/download/20150711/ruby-vagrant-virtualbox-x86_64.box"
   config.vm.network :forwarded_port, guest: 3000, host: 3000
 
   config.vm.provider :virtualbox do |vb|
