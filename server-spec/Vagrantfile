@@ -1,0 +1,10 @@
+VAGRANTFILE_API_VERSION = "2"
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+  config.vm.box = "ruby-vagrant"
+  # config.vm.box_url = "https://github.com/tokushimarb/ruby-vagrant/releases/download/20150711/ruby-vagrant-virtualbox.box"
+  config.vm.network "forwarded_port", guest: 3000, host: 3000
+  config.vm.provider :virtualbox do |vb|
+    vb.customize ["modifyvm", :id, "--natdnsproxy1", "off"]
+    vb.customize ["modifyvm", :id, "--natdnshostresolver1", "off"]
+  end
+end
